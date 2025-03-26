@@ -45,7 +45,7 @@ Public Class AugmentationForm
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "Province_Centralized_System.AugmentationForm.rpt"
+            Return "Budget_Application.AugmentationForm.rpt"
         End Get
         Set
             'Do nothing

@@ -45,7 +45,7 @@ Public Class SavingsOrigin
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "Province_Centralized_System.SavingsOrigin.rpt"
+            Return "Budget_Application.SavingsOrigin.rpt"
         End Get
         Set
             'Do nothing

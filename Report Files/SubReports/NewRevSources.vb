@@ -45,7 +45,7 @@ Public Class NewRevSources
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "Province_Centralized_System.NewRevSources.rpt"
+            Return "Budget_Application.NewRevSources.rpt"
         End Get
         Set
             'Do nothing
