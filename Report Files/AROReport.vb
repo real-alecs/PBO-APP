@@ -45,7 +45,7 @@ Public Class AROReport
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "Province_Centralized_System.AROReport.rpt"
+            Return "Budget_Application.AROReport.rpt"
         End Get
         Set
             'Do nothing

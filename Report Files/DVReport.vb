@@ -45,7 +45,7 @@ Public Class DVReport
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "Province_Centralized_System.DVReport.rpt"
+            Return "Budget_Application.DVReport.rpt"
         End Get
         Set
             'Do nothing
