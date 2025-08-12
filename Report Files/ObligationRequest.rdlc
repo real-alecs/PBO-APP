@@ -1985,6 +1985,7 @@
                 </ReportItems>
                 <KeepTogether>true</KeepTogether>
                 <Top>0.72397in</Top>
+                <Left>0.00061in</Left>
                 <Height>2.4882in</Height>
                 <Width>7.93014in</Width>
                 <ZIndex>1</ZIndex>
@@ -2010,7 +2011,7 @@
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Height>3.26216in</Height>
-            <Width>7.93014in</Width>
+            <Width>7.93075in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2029,10 +2030,10 @@
           </Border>
         </Style>
       </Body>
-      <Width>7.93014in</Width>
+      <Width>7.93075in</Width>
       <Page>
         <PageHeader>
-          <Height>2.35417in</Height>
+          <Height>2.34628in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -2284,7 +2285,7 @@
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>=Parameters!Office.Value</Value>
+                          <Value>=if(Parameters!Office.Value.ToString().Length&gt;100, Parameters!Office.Value.ToString().Substring(0,97) &amp; "...", Parameters!Office.Value )</Value>
                           <Style>
                             <FontFamily>tahoma</FontFamily>
                             <FontSize>11pt</FontSize>
@@ -2568,6 +2569,7 @@
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>0.96502in</Top>
+              <Left>0.00061in</Left>
               <Height>1.38126in</Height>
               <Width>7.93014in</Width>
               <Style>
@@ -2687,6 +2689,7 @@
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>0.18127in</Top>
+              <Left>0.00061in</Left>
               <Height>0.78375in</Height>
               <Width>7.93014in</Width>
               <ZIndex>1</ZIndex>
@@ -2717,7 +2720,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>TrackerNo</rd:DefaultName>
-              <Left>5.90233in</Left>
+              <Left>5.90294in</Left>
               <Height>0.18127in</Height>
               <Width>1.17956in</Width>
               <ZIndex>2</ZIndex>
@@ -2751,7 +2754,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>TrackerNo</rd:DefaultName>
-              <Left>7.08189in</Left>
+              <Left>7.0825in</Left>
               <Height>0.18127in</Height>
               <Width>0.84825in</Width>
               <ZIndex>3</ZIndex>
