@@ -87,6 +87,11 @@ Budget Application
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Budget_Application.My.Resources.Resources.Down_Arrow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Budget_Application.My.Resources.Resources.File_Settings">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
