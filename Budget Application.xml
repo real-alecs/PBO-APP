@@ -217,6 +217,11 @@ Budget Application
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Budget_Application.My.Resources.Resources.Wrong">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="T:Budget_Application.Accounting">
 <summary>
 Represents a strongly typed in-memory cache of data.
