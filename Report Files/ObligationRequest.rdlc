@@ -1948,7 +1948,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -1972,7 +1971,7 @@
                 <TablixMember>
                   <Group Name="groupID">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!id.Value</GroupExpression>
+                      <GroupExpression>=Fields!AccountCode.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <TablixMembers>
