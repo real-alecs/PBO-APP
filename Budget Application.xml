@@ -477,5 +477,15 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="M:Budget_Application.CreateSupplemental.LBPForm8Btn_Click(System.Object,System.EventArgs)">
+ <summary>
+ Collects all prepared entries from the dictionaries, validates form-type constraints,
+ and directly generates the Crystal Report print preview.
+ Form 8 = Funding Source (DocumentType 2)  |  Form 9 = Supplemental (DocumentType 1)
+ </summary>
+</member>
+<member name="M:Budget_Application.CreateSupplemental.ShowConflict(System.String,System.String)">
+ <summary>Shows a conflict message with an Opaque backdrop.</summary>
+</member>
 </members>
 </doc>
