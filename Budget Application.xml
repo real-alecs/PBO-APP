@@ -477,15 +477,47 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="M:Budget_Application.CreateSupplemental.GrandTotal(System.Int32)">
+ <summary>Sums registryAmounts + newAccountsStore across every office for one DocumentType.</summary>
+</member>
 <member name="M:Budget_Application.CreateSupplemental.LBPForm8Btn_Click(System.Object,System.EventArgs)">
  <summary>
  Collects all prepared entries from the dictionaries, validates form-type constraints,
  and directly generates the Crystal Report print preview.
- Form 8 = Funding Source (DocumentType 2)  |  Form 9 = Supplemental (DocumentType 1)
+ Form 8 = Funding Source (DocumentType 1)  |  Form 9 = Supplemental (DocumentType 2)
  </summary>
 </member>
 <member name="M:Budget_Application.CreateSupplemental.ShowConflict(System.String,System.String)">
  <summary>Shows a conflict message with an Opaque backdrop.</summary>
+</member>
+<member name="M:Budget_Application.NewSupplementalDashboard.ShowForm8Report(System.String)">
+ <summary>
+ LBP FORM 8 – Funding Source / Savings report from saved data.
+ Reads pbo_fundingsourcedata rows matching the fundingsourceid and
+ builds the same Crystal Report used in CreateSupplemental.
+ </summary>
+</member>
+<member name="M:Budget_Application.NewSupplementalDashboard.ShowForm9Report(System.String,System.Windows.Forms.DataGridViewRow)">
+ <summary>
+ LBP FORM 9 – Supplemental Appropriation report from saved data.
+ Reads pbo_supplementaldata rows matching the supplementalid and
+ builds the same Crystal Report used in CreateSupplemental.
+ </summary>
+</member>
+<member name="M:Budget_Application.NewSupplementalDashboard.ShowAROReport(System.String,System.String,System.Windows.Forms.DataGridViewRow)">
+ <summary>
+ ARO Supplemental Report from saved data.
+ Destination = pbo_supplementaldata (where the fund goes)
+ Source      = pbo_fundingsourcedata (where the fund comes from)
+ Follows the legacy pattern in SupplementalDataForm.PrintBtn_Click.
+ </summary>
+</member>
+<member name="M:Budget_Application.NewSupplementalDashboard.VerifySupplemental(System.String,System.Windows.Forms.DataGridViewRow)">
+ <summary>
+ Verifies a supplemental record: generates an ARO number, inserts each
+ supplemental-data row into pbo_allotment, updates statuses, and increments
+ the ARO counter.  Follows the legacy SupplementalDataForm.SaveBtn_Click pattern.
+ </summary>
 </member>
 </members>
 </doc>
