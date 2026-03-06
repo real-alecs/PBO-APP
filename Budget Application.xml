@@ -519,5 +519,17 @@ Row event argument class
  the ARO counter.  Follows the legacy SupplementalDataForm.SaveBtn_Click pattern.
  </summary>
 </member>
+<member name="P:Budget_Application.SurplusAndOthers.SelectedSavingsMainId">
+ <summary>Selected savings main ID (pbo_savingsmain.id)</summary>
+</member>
+<member name="P:Budget_Application.SurplusAndOthers.SelectedFundingAmount">
+ <summary>Funding amount entered by user</summary>
+</member>
+<member name="P:Budget_Application.SurplusAndOthers.SelectedDescription">
+ <summary>Description entered by user</summary>
+</member>
+<member name="P:Budget_Application.SurplusAndOthers.SelectedBudgetYear">
+ <summary>Budget year of the selected savings row</summary>
+</member>
 </members>
 </doc>
