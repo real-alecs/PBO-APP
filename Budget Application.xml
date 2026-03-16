@@ -512,7 +512,7 @@ Row event argument class
  Follows the legacy pattern in SupplementalDataForm.PrintBtn_Click.
  </summary>
 </member>
-<member name="M:Budget_Application.NewSupplementalDashboard.VerifySupplemental(System.String,System.Windows.Forms.DataGridViewRow)">
+<member name="M:Budget_Application.NewSupplementalDashboard.ReleaseSupplemental(System.String,System.Windows.Forms.DataGridViewRow)">
  <summary>
  Verifies a supplemental record: generates an ARO number, inserts each
  supplemental-data row into pbo_allotment, updates statuses, and increments
