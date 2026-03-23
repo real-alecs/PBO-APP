@@ -297,6 +297,26 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:Budget_Application.ChargeSlipDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Budget_Application.ChargeSlipDS.ChargeSlipDataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Budget_Application.ChargeSlipDS.ChargeSlipDataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Budget_Application.ChargeSlipDS.ChargeSlipDataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Budget_Application.ReleasingDS">
 <summary>
 Represents a strongly typed in-memory cache of data.
