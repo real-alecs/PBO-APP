@@ -56,6 +56,10 @@
           <DataField>id</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SortOrder">
+          <DataField>SortOrder</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>OBligationDS</rd:DataSetName>
@@ -1514,6 +1518,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1529,7 +1534,7 @@
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>=IIf(RowNumber(Nothing) = 1 And Len(Fields!AccountName.Value) &gt; 50, "7.5pt", "8.5pt")</FontSize>
-                                    <FontWeight>=IIf(Fields!AccountName.Value = "-----------Nothing follows-----------" , "SemiBold", "Normal")</FontWeight>
+                                    <FontWeight>=IIf(Fields!AccountName.Value = "-----------Nothing follows-----------" Or (Left(Fields!id.Value &amp; "", 7) = "parent_"), "SemiBold", "Normal")</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1976,9 +1981,7 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=IIF(Len(Trim(Fields!AccountCode.Value &amp; "")) = 0,
-     "ZZZZZZZZ",
-     Fields!AccountCode.Value)</Value>
+                      <Value>=Fields!SortOrder.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixMembers>
