@@ -307,12 +307,27 @@ Represents a strongly typed in-memory cache of data.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Budget_Application.ChargeSlipDS.ChargeSlipCityDataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Budget_Application.ChargeSlipDS.ChargeSlipDataRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
+<member name="T:Budget_Application.ChargeSlipDS.ChargeSlipCityDataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
 <member name="T:Budget_Application.ChargeSlipDS.ChargeSlipDataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Budget_Application.ChargeSlipDS.ChargeSlipCityDataRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
