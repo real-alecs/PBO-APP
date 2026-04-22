@@ -1518,7 +1518,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1530,11 +1529,13 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!AccountName.Value</Value>
+                                  <Value>=IIf(CStr(Fields!id.Value) = "digitalreview", "DIGITAL REVIEW ONLY", Fields!AccountName.Value)</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>=IIf(RowNumber(Nothing) = 1 And Len(Fields!AccountName.Value) &gt; 50, "7.5pt", "8.5pt")</FontSize>
-                                    <FontWeight>=IIf(Fields!AccountName.Value = "-----------Nothing follows-----------" Or (Left(Fields!id.Value &amp; "", 7) = "parent_"), "SemiBold", "Normal")</FontWeight>
+                                    <FontFamily>=IIf(CStr(Fields!id.Value) = "digitalreview", "SEGOE UI", "Tahoma")</FontFamily>
+                                    <FontSize>=IIf(CStr(Fields!id.Value) = "digitalreview", "20pt", IIf(RowNumber(Nothing) = 1 And Len(Fields!AccountName.Value) &gt; 50, "7.5pt", "8.5pt"))</FontSize>
+                                    <FontStyle>=IIf(CStr(Fields!id.Value) = "digitalreview", "Italic", "Normal")</FontStyle>
+                                    <FontWeight>=IIf(CStr(Fields!id.Value) = "digitalreview" Or Fields!AccountName.Value = "-----------Nothing follows-----------" Or (Left(Fields!id.Value &amp; "", 7) = "parent_"), "SemiBold", "Normal")</FontWeight>
+                                    <Color>=IIf(CStr(Fields!id.Value) = "digitalreview", "Gray", "Black")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1984,6 +1985,9 @@
                       <Value>=Fields!SortOrder.Value</Value>
                     </SortExpression>
                   </SortExpressions>
+                  <Visibility>
+                    <Hidden>=CStr(Fields!id.Value) = "digitalreview" And Parameters!digitalReview.Value = False</Hidden>
+                  </Visibility>
                   <TablixMembers>
                     <TablixMember />
                   </TablixMembers>
@@ -2900,6 +2904,15 @@
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="digitalReview">
+      <DataType>Boolean</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>false</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -3000,6 +3013,11 @@
           <ColumnIndex>2</ColumnIndex>
           <RowIndex>4</RowIndex>
           <ParameterName>officecode_acctg</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>digitalReview</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

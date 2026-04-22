@@ -69,6 +69,10 @@
           <DataField>aipcode</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="qrImage">
+          <DataField>qrImage</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>ChargeSlipDS</rd:DataSetName>
@@ -218,13 +222,6 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Code: </Value>
-                                      <Style>
-                                        <FontFamily>Times New Roman</FontFamily>
-                                        <FontSize>10.5pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                    <TextRun>
                                       <Value>=Fields!aipcode.Value</Value>
                                       <Style>
                                         <FontFamily>Times New Roman</FontFamily>
@@ -290,7 +287,7 @@
                             </Textbox>
                             <Image Name="QRCode">
                               <Source>Database</Source>
-                              <Value>=Convert.FromBase64String(Parameters!QRCode.Value)</Value>
+                              <Value>=Fields!qrImage.Value</Value>
                               <MIMEType>image/bmp</MIMEType>
                               <Sizing>FitProportional</Sizing>
                               <Top>3.80208in</Top>
@@ -311,14 +308,16 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>OFFICE:</Value>
+                                      <Value>=Parameters!officeCode.Value</Value>
                                       <Style>
                                         <FontFamily>Times New Roman</FontFamily>
                                         <FontSize>11pt</FontSize>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
-                                  <Style />
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox13</rd:DefaultName>
@@ -377,7 +376,21 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>APPROPRIATION: (YEAR)</Value>
+                                      <Value>APPROPRIATION: (</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=Parameters!rptYear.Value</Value>
+                                      <Style>
+                                        <FontFamily>Times New Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>)</Value>
                                       <Style>
                                         <FontFamily>Times New Roman</FontFamily>
                                         <FontSize>12pt</FontSize>
@@ -1017,6 +1030,18 @@
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="rptYear">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="officeCode">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -1042,6 +1067,16 @@
           <ColumnIndex>3</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>QRCode</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>rptYear</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>officeCode</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
