@@ -185,7 +185,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!ChargeSlipDate.Value</Value>
+                                      <Value>Charge Slip</Value>
                                       <Style>
                                         <FontFamily>Times New Roman</FontFamily>
                                         <FontSize>11pt</FontSize>
@@ -259,7 +259,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>DATE:</Value>
+                                      <Value>DOCUMENT:</Value>
                                       <Style>
                                         <FontFamily>Times New Roman</FontFamily>
                                         <FontSize>11pt</FontSize>
