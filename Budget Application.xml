@@ -27,16 +27,6 @@ Budget Application
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Budget_Application.My.Resources.Resources.Add_New">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Budget_Application.My.Resources.Resources.Add_New1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Budget_Application.My.Resources.Resources.Add_row">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -47,22 +37,12 @@ Budget Application
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Budget_Application.My.Resources.Resources.Attachment___01">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Budget_Application.My.Resources.Resources.Attachment_01_WF">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Budget_Application.My.Resources.Resources.Calendar_Save">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Budget_Application.My.Resources.Resources.Camera_01">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -127,22 +107,7 @@ Budget Application
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Budget_Application.My.Resources.Resources.Data_Synchronize1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Budget_Application.My.Resources.Resources.Document_Add_01">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Budget_Application.My.Resources.Resources.Down_Arrow">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Budget_Application.My.Resources.Resources.Export___01">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -153,21 +118,6 @@ Budget Application
 </summary>
 </member>
 <member name="P:Budget_Application.My.Resources.Resources.Find_and_Select">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Budget_Application.My.Resources.Resources.Folder_Open_01">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Budget_Application.My.Resources.Resources.Folder_Open_011">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Budget_Application.My.Resources.Resources.Form_01_WF">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -217,11 +167,6 @@ Budget Application
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Budget_Application.My.Resources.Resources.NewPrint">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Budget_Application.My.Resources.Resources.Not_Found">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -237,22 +182,7 @@ Budget Application
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Budget_Application.My.Resources.Resources.Receipt">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Budget_Application.My.Resources.Resources.Recycle_Bin">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Budget_Application.My.Resources.Resources.Reload">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Budget_Application.My.Resources.Resources.Reload1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -263,11 +193,6 @@ Budget Application
 </summary>
 </member>
 <member name="P:Budget_Application.My.Resources.Resources.Save_1_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Budget_Application.My.Resources.Resources.SaveBlue">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
